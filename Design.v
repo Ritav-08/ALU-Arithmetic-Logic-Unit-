@@ -24,9 +24,9 @@ wire [31:0]or_o; //Result of 32 parallel ORs
 assign {Acarry_o, sum_o} = a_i + b_i;
 //Subtraction
 assign {Scarry_o, diff_o} = a_i + (~b_i) + 1;
-//logical AND
+//AND
 assign and_o = a_i & b_i;
-//logical OR
+//OR
 assign or_o = a_i | b_i;
 
 //ALU Output selection
